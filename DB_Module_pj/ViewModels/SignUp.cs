@@ -21,5 +21,10 @@ namespace DB_Module_pj.ViewModels
         {
 
         }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+            txt_PWD.Text = "123";
+        }
     }
 }

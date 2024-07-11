@@ -37,7 +37,7 @@
             button1 = new Button();
             button2 = new Button();
             textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txt_PWD = new TextBox();
             Btn_CheckID = new Button();
             textBox3 = new TextBox();
             label7 = new Label();
@@ -127,12 +127,12 @@
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 5;
             // 
-            // textBox2
+            // txt_PWD
             // 
-            textBox2.Location = new Point(176, 114);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 5;
+            txt_PWD.Location = new Point(176, 114);
+            txt_PWD.Name = "txt_PWD";
+            txt_PWD.Size = new Size(100, 23);
+            txt_PWD.TabIndex = 5;
             // 
             // Btn_CheckID
             // 
@@ -213,7 +213,7 @@
             Controls.Add(textBox5);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
-            Controls.Add(textBox2);
+            Controls.Add(txt_PWD);
             Controls.Add(textBox1);
             Controls.Add(Btn_CheckID);
             Controls.Add(button2);
@@ -228,6 +228,7 @@
             Controls.Add(label1);
             Name = "SignUp";
             Text = "SignUp";
+            Load += SignUp_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -243,7 +244,7 @@
         private Button button1;
         private Button button2;
         private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txt_PWD;
         private Button Btn_CheckID;
         private TextBox textBox3;
         private Label label7;
